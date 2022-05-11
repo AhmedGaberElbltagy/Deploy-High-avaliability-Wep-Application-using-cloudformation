@@ -31,6 +31,11 @@ Parameters:
         Description: Please enter the IP range (CIDR notation) for the Subnet
         Type: String
         Default: 10.0.3.0/24
+    S3CodeRepo:
+        Description: Full S3 path and file name of zipped file
+        Type: String
+        Default: 's3://udacity-demo-165746709339/udgramApp/'
+    
     InstanceType:
         Description: 
             "The EC2 instance type of general purpose"
@@ -284,13 +289,13 @@ Resources:
             UserData:
                 Fn::Base64: !Sub |
                     #!/bin/bash
-                    apt-get update -y
-                    apt-get install unzip awscli -y
-                    apt-get install apache2 -y
-                    systemctl start apache2.service
+                    sudo apt-get update -y
+                    sudo apt-get install unzip awscli -y
+                    sudo apt-get install apache2 -y
+                    sudo systemctl start apache2.service
                     cd /var/www/html
-                    aws s3 cp s3://udacity-demo-165746709339/udacity-demo-1/udacity.zip .
-                    unzip -o udacity.zip
+                    aws s3 cp s3://udacity-demo-165746709339/udgramApp/ .
+                    unzip -o udacity.zip   
             ImageId: ami-0ac73f33a1888c64a
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
