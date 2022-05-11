@@ -76,7 +76,7 @@ Resources:
           VpcId: !Ref VPC 
           AvailabilityZone: !Select [ 0, !GetAZs '' ]
           CidrBlock: !Ref PublicSubnet1CIDR
-          MapPublicIpOnLaunch: false
+          MapPublicIpOnLaunch: true
           Tags: 
               - Key: Name
                 Value: !Sub ${EnvironmentName} Public Subnet (AZ1)
@@ -87,7 +87,7 @@ Resources:
         VpcId: !Ref VPC
         AvailabilityZone: !Select [ 1, !GetAZs '' ]
         CidrBlock: !Ref PublicSubnet2CIDR
-        MapPublicIpOnLaunch: false
+        MapPublicIpOnLaunch: true
         Tags: 
             - Key: Name
               Value: !Sub ${EnvironmentName} Public Subnet (AZ2)
@@ -297,6 +297,7 @@ Resources:
                     aws s3 cp s3://udacity-demo-165746709339/udgramApp/UdagramApp.zip.
                     unzip -o Udgram App.zip   
             ImageId: ami-0ac73f33a1888c64a
+            KeyName: devopskey
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
             -   Ref: WebServerSecGroup
