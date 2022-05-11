@@ -294,7 +294,7 @@ Resources:
                     sudo apt-get install apache2 -y
                     sudo systemctl start apache2.service
                     cd /var/www/html
-                    aws s3 cp s3://udacity-demo-165746709339/udgramApp/ .
+                    aws s3 cp s3://udacity-demo-165746709339/udgramApp/Udgram App.zip .
                     unzip -o udacity.zip   
             ImageId: ami-0ac73f33a1888c64a
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
