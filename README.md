@@ -7,12 +7,12 @@
 
 ## The files included are:
 ```sh
-* /Images-of-result-deploy : Screenshot the result of deploy.
-* /App of Udagram : Udagram App Code (Bootssrap CSS framework, Font, and JavaScript libraries needed for the website to function etc ...)
-* create.sh : Cloudformation create stack script. 
-* update.sh : Cloudformation update stack script.
-* infrastructure_networkandserver.yml : Udagram Project's CloudFormation script.
-* infrastructure_networkandserver.json : Udagram Project's CloudFormation script parameters.
+1- /project ScreenShots: Screenshot the result of deploy.
+2- /UdgramApplication : Udagram App Code (Bootssrap CSS framework, Font, and JavaScript libraries needed for the website to function etc ...)
+3- create.sh : Cloudformation create stack script. 
+4- update.sh : Cloudformation update stack script.
+5- infrastructure.yml : Udagram Project's CloudFormation script.
+6- infrastructure.json : Udagram Project's CloudFormation script parameters.
 ```
 ## Instruction of deploy:
 Just run;
