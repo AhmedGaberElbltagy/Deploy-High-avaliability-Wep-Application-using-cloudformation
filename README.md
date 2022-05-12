@@ -1,6 +1,5 @@
 # Project 2 - Deploy a High-Availability Web App using CloudFormation 
 
-![img-1](/aws Architecture diagrma.jpeg)
 
 > In this project (Udagram App), I deployed web servers for a highly available web app using CloudFormation.
 > I wrote the script that creates and deploys the infrastructure and application for an Udagram app from the ground up.
