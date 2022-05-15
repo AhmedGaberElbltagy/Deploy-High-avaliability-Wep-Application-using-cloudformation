@@ -19,4 +19,3 @@ Just run;
 ```sh
 > ./create.sh UdagramApp infrastructure_networkandserver.yml infrastructure_networkandserver.json
 ```
-the link for UdgramApp :http://udaci-webap-f955yvvbcu27-1701822217.us-west-2.elb.amazonaws.com/
