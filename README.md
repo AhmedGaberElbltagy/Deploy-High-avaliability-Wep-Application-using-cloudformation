@@ -1,4 +1,4 @@
-# Deploy a High-Availability Web App using CloudFormation 
+# Deploy a High-Availability Web Application using CloudFormation 
 
 ## Project Diagram 
 
