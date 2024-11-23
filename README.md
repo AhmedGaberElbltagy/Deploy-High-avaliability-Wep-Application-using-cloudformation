@@ -2,7 +2,7 @@
 
 ## Project Diagram 
 
-![Project Diagram ](.AWS_Architecture.png/.png)
+![Project Diagram ](./AWS_Architecture.png/.png)
 
 
 > In this project (Udagram App), I deployed web servers for a highly available web app using CloudFormation.
