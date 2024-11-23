@@ -33,8 +33,8 @@
 - The application needs to be deployed into private subnets with a Load Balancer located in a public subnet.
 
 - One of the output exports of the CloudFormation script should be the public URL of the LoadBalancer. Bonus points if you add http:// in front of the load balancer DNS Name in the output, for convenience.
+- 
 ## Instruction of deploy:
-Just run;
 ```sh
-> ./create.sh UdagramApp infrastructure_networkandserver.yml infrastructure_networkandserver.json
+./create.sh UdagramApp infrastructure_networkandserver.yml infrastructure_networkandserver.json
 ```
