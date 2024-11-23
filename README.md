@@ -5,9 +5,17 @@
 ![Project Diagram ](./AWS_Architecture.png)
 
 
-> In this project (Udagram App), I deployed web servers for a highly available web app using CloudFormation.
-> I wrote the script that creates and deploys the infrastructure and application for an Udagram app from the ground up.
-> The script begin deploying the networking components followed by servers, security roles and software.
+## The Scenario For the Project 
+
+Your company is creating an Instagram clone called Udagram.
+
+Developers want to deploy a new application to the AWS infrastructure.
+
+You have been tasked with provisioning the required infrastructure and deploying a dummy application, along with the necessary supporting software.
+
+This needs to be automated so that the infrastructure can be discarded as soon as the testing team finishes their tests and gathers their results.
+
+Optional - To add more challenge to the project, once the project is completed, you can try deploying sample website files located in a public S3 Bucket to the Apache Web Server running on an EC2 instance. Though, it is not the part of the project rubric.
 
 ## The files included are:
 ```sh
